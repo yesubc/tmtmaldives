@@ -1,0 +1,67 @@
+/* --------------------------------------------------------
+Style Sheet for TMT Maldives
+
+version: 1.0
+last modified: 10.14.2015 by yesubc@gmail.com
+author: Sunil Shrestha
+website: http://www.yesubc.com/
+----------------------------------------------------------*/
+
+// COLOR
+$primary-green: #00a0af;
+$primary-green-hover: #05b1c1;
+$primary-green-focus: #048a96;
+
+$global-a: #008CBA;
+$global-a-hover: #ff8908;
+$primary-gold: #ffc641;
+$primary-gold-a: #ff9600;
+$primary-white: #ffffff;
+
+$global-black: #000000;
+$global-black: #404040;
+$global-gray: #222222;
+$lightgray: #cccccc;
+$fadelight: #e8e8e8;
+$primary-black: #666666;
+$secondary-black: #888888;
+$light-black: #999999;
+
+// FLOAT
+$left: left;
+$right: right;
+
+// FONT
+$global-font: "montserratlight","Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+
+$base-font-size: 14px;
+
+// DISPLAY
+$block: block;
+
+// Width Variables
+$width-default: 100%;
+$width-wrapper: 1000px;
+
+$left-width: (300/1000)*100%;
+$main-width: (700/1000)*100%;
+$right-width: (300/1000)*100%;
+
+$col-left: (300/700)*100%;
+$col-main: (400/700)*100%;
+$col-right: (300/700)*100%;
+
+// BREAKPOINTS
+$break-small:   480px;
+$break-medium:  620px;
+$break-large:   800px;
+
+// A standard margin
+$spacer:        30px;
+
+// DEVICE
+$information-ipad-landscape: "only screen and (width : 1024px)";
+$information-ipad-portrait: "only screen and (max-width : 768px)";
+
+// PATHS
+$image-path: "../images"

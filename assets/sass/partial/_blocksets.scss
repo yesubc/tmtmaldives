@@ -1,0 +1,58 @@
+//yesubc.com (c) Sunil Shrestha <yesubc@gmail.com>
+// Blocksets
+.colset {
+    &:after {
+        @extend %after-pseudo;
+    }
+    .colset-1 {
+        width: $width-default/12;
+    }
+    .colset-2 {
+        width: $width-default/11;
+    }
+    .colset-3 {
+        width: $width-default/10;
+    }
+    .colset-4 {
+        width: $width-default/9;
+    }
+    .colset-5 {
+        width: $width-default/8;
+    }
+    .colset-6 {
+        width: $width-default/7;
+    }
+    .colset-7 {
+        width: $width-default/6;
+    }
+    .colset-8 {
+        width: $width-default/5;
+    }
+    .colset-9 {
+        width: $width-default/4;
+    }
+    .colset-10 {
+        width: $width-default/3;
+    }
+    .colset-11 {
+        width: $width-default/2;
+    }
+    .colset-12 {
+        width: $width-default;
+    }
+
+    [class^="colset-"], [class*=" colset-"] {
+        @extend .float-left;
+        padding-right: 20px;
+        margin-bottom: 20px;
+    }
+    [class*='colset-']:last-of-type {
+        padding-right: 0;
+    }
+}
+
+[class^="colset-"], [class*=" colset-"] {
+    [class*='colset-']:last-of-type {
+        padding-right: 0;
+    }
+}

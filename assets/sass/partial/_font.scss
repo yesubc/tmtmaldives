@@ -1,0 +1,51 @@
+//yesubc.com (c) Sunil Shrestha <yesubc@gmail.com>
+@font-face {
+    font-family: 'montserratbold';
+    src: url('../fonts/montserrat-bold-webfont.eot');
+    src: url('../fonts/montserrat-bold-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/montserrat-bold-webfont.woff') format('woff'),
+    url('../fonts/montserrat-bold-webfont.ttf') format('truetype'),
+    url('../fonts/montserrat-bold-webfont.svg#montserratbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'montserratregular';
+    src: url('../fonts/montserrat-regular-webfont.eot');
+    src: url('../fonts/montserrat-regular-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/montserrat-regular-webfont.woff') format('woff'),
+    url('../fonts/montserrat-regular-webfont.ttf') format('truetype'),
+    url('../fonts/montserrat-regular-webfont.svg#montserratregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'montserratlight';
+    src: url('../fonts/montserrat-light_0-webfont.eot');
+    src: url('../fonts/montserrat-light_0-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/montserrat-light_0-webfont.woff2') format('woff2'),
+    url('../fonts/montserrat-light_0-webfont.woff') format('woff'),
+    url('../fonts/montserrat-light_0-webfont.ttf') format('truetype'),
+    url('../fonts/montserrat-light_0-webfont.svg#montserratlight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+/* Entypo Icon Font */
+@font-face {
+  font-family: 'entypo-selected';
+  src: url("../fonts/entypo-selected.eot");
+  src: 
+      url("../fonts/entypo-selected.eot?#iefix") format('embedded-opentype'), 
+      url("../fonts/entypo-selected.woff") format('woff'), 
+      url("../fonts/entypo-selected.ttf") format('truetype'), 
+      url("../fonts/entypo-selected.svg#entypo-selected") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

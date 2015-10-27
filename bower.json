@@ -1,0 +1,16 @@
+{
+    "name": "TMT Maldives",
+    "authors": [
+        "Sunil Shrestha <yesubc@gmail.com>"
+    ],
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components"
+    ],
+    "dependencies": {
+        "font-awesome": "~4.3.0",
+        "html5shiv": "~3.7.2",
+        "select2": "~4.0.0"
+    }
+}

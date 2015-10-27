@@ -1,0 +1,71 @@
+//yesubc.com (c) Sunil Shrestha <yesubc@gmail.com>
+//MIXINS
+
+//BORDER RADIUS
+@mixin border-radius($radius: 4px) {
+    -moz-border-radius: $radius;
+    -webkit-border-radius: $radius;
+    border-radius: $radius;
+}
+
+//BOX SIZING
+@mixin box-sizing($type: border-box) {
+    -webkit-box-sizing: $type;
+    -moz-box-sizing: $type;
+    -o-box-sizing: $type;
+    -ms-box-sizing: $type;
+    box-sizing: $type;
+}
+
+@mixin x-appearance($value) {
+    -webkit-appearance: $value;
+    -moz-appearance: $value;
+    appearance: $value;
+}
+
+@mixin x-boxshadow($value) {
+    -webkit-box-shadow: $value;
+    -moz-box-shadow: $value;
+    -o-box-shadow: $value;
+    -ms-box-shadow: $value;
+    box-shadow: $value;
+}
+
+@mixin x-transition($values...) {
+    -webkit-transition: $values;
+    -moz-transition: $values;
+    -o-transition: $values;
+    -ms-transition: $values;
+    transition: $values;
+}
+
+@mixin x-transform($values) {
+    -webkit-transform: $values; // Chrome, Safari, iOS Safari, Android Stock
+    -moz-transform: $values;
+    -ms-transform: $values; // IE9
+    transform: $values;
+}
+
+//WBEKIT FONT SMOOTHING
+@mixin font-smoothing($value: on) {
+    @if $value == on {
+        -webkit-font-smoothing: antialiased;
+        -moz-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        font-smoothing: antialiased;
+    } @else {
+        -webkit-font-smoothing: subpixel-antialiased;
+        -moz-osx-font-smoothing: auto;
+    }
+}
+
+@function em($px, $base: $base-font-size) {
+    @return ($px / $base) * 1em;
+}
+
+$browser-context: 16;
+// Default
+
+@function em($pixels, $context: $browser-context) {
+    @return #{$pixels/$context}em
+}

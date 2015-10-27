@@ -1,0 +1,25 @@
+//yesubc.com (c) Sunil Shrestha <yesubc@gmail.com>
+.navigation{
+    background: #eaeff3;
+    line-height: 60px;
+    ul{
+        li{
+            text-transform: uppercase;
+            font-size: 12px;
+            line-height: normal;
+            a{
+                color: #333333;
+                &:hover{
+
+                }
+            }
+            &:last-of-type {
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+.slider{
+    
+}

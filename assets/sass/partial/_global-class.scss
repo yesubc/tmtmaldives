@@ -1,0 +1,243 @@
+//yesubc.com (c) Sunil Shrestha <yesubc@gmail.com>
+html, body {
+    height: $width-default;
+    width: $width-default;
+}
+
+body {
+    color: $global-gray;
+    font: normal $base-font-size $global-font;
+    background: $primary-white;
+    position: relative;
+    overflow-x: hidden;
+    @include box-sizing(border-box);
+}
+
+hr {
+    border: none;
+    height: 1px;
+    width: $width-default;
+    border-bottom: solid 1px $global-gray;
+}
+
+a {
+    color: $global-a;
+    text-decoration: none;
+    cursor: pointer;
+    @include x-transition(all 0.3s ease-in-out);
+    &:hover, &:focus {
+        color: $global-a-hover;
+        text-decoration: underline;
+        outline: none;
+    }
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $global-font;
+    margin-bottom: 20px;
+    letter-spacing: 0.5px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $global-font;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 45px;
+}
+
+h2 {
+    font-size: 25px;
+    margin: 0;
+    padding-bottom: 20px;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+h4 {
+    font-size: $base-font-size;
+}
+
+h5 {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+h6 {
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+ol,ul{
+    margin: 0;
+}
+
+.after-pseudo, %after-pseudo {
+    content: "";
+    width: $width-default;
+    display: table;
+    @extend %clearall;
+}
+
+.dis-block, %dis-block, .show-m {
+    display: $block;
+}
+
+.hide-m, .hide {
+    display: none;
+}
+
+.roundedborder {
+    @include border-radius (4px);
+}
+
+.float-left,%float-left {
+    float: $left;
+}
+
+.float-right,%float-right {
+    float: $right;
+}
+
+.scroll {
+    overflow: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.no-mp {
+    margin: 0;
+    padding: 0;
+}
+
+.txt-trans{
+    text-transform: none;
+}
+
+.padding {
+    padding: 20px 0;
+}
+
+.align-rt {
+    text-align: right;
+}
+.align-left {
+    text-align: left;
+}
+.align-center {
+    text-align: center;
+}
+
+.padding-l-r {
+    padding: 0 20px;
+}
+
+.circle{
+    @include border-radius(100%);
+}
+
+.edit {
+    font-size: 12px;
+    opacity: 0.5;
+    margin: 5px;
+    cursor: pointer;
+    color: rgba($global-black, 0.5);
+    &:hover {
+        opacity: 1;
+        color: rgba($global-black, 1);
+    }
+}
+
+.ellipsis, .truncate {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    -ms-text-overflow: ellipsis;
+}
+
+.seperator {
+    color: #dddddd;
+    background: #dddddd;
+    height: 1px;
+    line-height: 1px;
+    width: 100%;
+    border: 0;
+}
+
+.loader {
+    @extend %after-pseudo;
+    padding: 20px 10px;
+    color: $global-black;
+    i {
+        font-size: 24px;
+    }
+}
+
+.light {
+    color: rgba($global-black, 0.7);
+}
+
+.small-font {
+    font-size: 12px;
+}
+
+.gamma-loading {
+    background-image: none;
+}
+
+// Dropdown menu onclick
+ul.dropdown-menu {
+    @extend .hide;
+}
+
+.datepicker {
+    background-image: url(#{$image-path}/icons/icon-calendar.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 26px;
+    min-height: 100%;
+    cursor: pointer;
+}
+
+
+[hidden] {
+    @extend .hide;
+}
+
+
+/*Option Header*/
+.or-option {
+    text-transform: uppercase;
+    text-align: center;
+    color: $lightgray;
+    color: rgba($lightgray,0.5);
+    margin: 0 0 30px 0;
+    position: relative;
+    font-size: 24px;
+
+    &:after,
+    &:before {
+        background-color: $lightgray;
+        background-color: rgba($lightgray,0.5);
+        content: "";
+        height: 1px;
+        position: absolute;
+        top: 46%;
+        width: 48%;
+    }
+    &:after {
+        right: 0;
+    }
+
+    &:before {
+        left: 0;
+    }
+}

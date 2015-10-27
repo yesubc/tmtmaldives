@@ -1,0 +1,174 @@
+//yesubc.com (c) Sunil Shrestha <yesubc@gmail.com>
+// LAYOUT
+.main-container {
+    width: $width-default;
+    padding: 0;
+}
+
+.navigation {
+    color: $global-white;
+}
+
+.main-wrapper {
+    max-width: $width-default;
+    &:after {
+        @extend %after-pseudo;
+    }
+}
+
+.width-wrapper {
+    width: $width-wrapper;
+    margin: 0 auto;
+}
+
+.left-width {
+    width: $left-width;
+}
+
+.main-width {
+    width: $main-width;
+}
+
+.right-width {
+    width: $right-width;
+}
+
+// INNER COL WIDTH
+.col-left {
+    width: $col-left;
+}
+
+.col-main {
+    width: $col-main;
+}
+
+.col-right {
+    width: $col-right;
+}
+
+.content {
+    padding: 15px;
+}
+
+// COL ONE LAYOUT
+.col1-layout {
+    width: $width-default;
+    .main {
+        width: $width-default;
+        .col-main {
+
+            width: $width-default;
+        }
+    }
+}
+
+// COL TWO LEFT LAYOUT
+.col2-left-layout {
+    width: $width-default;
+    @extend .padding;
+    .col-left {
+        @extend .float-left, .left-width;
+    }
+    .main {
+        width: $main-width;
+        @extend .float-right;
+        .col-main {
+
+            width: $width-default;
+        }
+    }
+}
+
+// COL TWO RIGHT LAYOUT
+.col2-right-layout {
+    width: $width-default;
+    @extend .padding;
+    .main {
+        width: $main-width;
+        @extend .float-left;
+        .col-main {
+
+            width: $width-default;
+        }
+    }
+    .col-right {
+        width: $right-width;
+        @extend .float-right;
+    }
+}
+
+// COL THREE LEFT LAYOUT
+.col3-left-layout {
+    width: $width-default;
+    @extend .padding;
+    .col-left {
+        @extend .float-left, .left-width;
+    }
+    .main {
+        @extend .float-right, .main-width;
+        .col-main {
+            @extend .float-left, .col-main;
+        }
+        .col-right {
+            @extend .float-right, .col-right;
+        }
+    }
+}
+
+// COL THREE RIGHT LAYOUT
+.col3-right-layout {
+    width: $width-default;
+    @extend .padding;
+    .main {
+        @extend .float-left, .main-width;
+        .col-left {
+            @extend .float-left, .col-left;
+        }
+        .col-main {
+            @extend .float-right, .col-main;
+        }
+    }
+    .col-right {
+        @extend .float-right, .right-width;
+    }
+}
+
+// COLUMN THREE L LEFT LAYOUT
+.col3-l-left-layout {
+    width: $width-default;
+    @extend .padding;
+    .col-left {
+        @extend .float-left, .left-width;
+    }
+    .main {
+        @extend .float-right, .main-width;
+        .col-l-left {
+            @extend .float-left, .col-left;
+        }
+        .col-main {
+            @extend .float-right, .col-main;
+        }
+    }
+}
+
+// COLUMN THREE R RIGHT LAYOUT
+.col3-r-right-layout {
+    width: $width-default;
+    @extend .padding;
+    .main {
+        @extend .float-left, .main-width;
+        .col-main {
+            @extend .float-left, .col-main;
+        }
+        .col-r-right {
+            @extend .float-right, .col-right;
+        }
+    }
+    .col-right {
+        @extend .float-right, .right-width;
+    }
+}
+
+.row {
+    @extend %after-pseudo;
+}

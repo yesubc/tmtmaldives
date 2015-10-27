@@ -1,0 +1,641 @@
+//yesubc.com (c) Sunil Shrestha <yesubc@gmail.com>
+@import "partial/variables";
+@import "partial/mixin";
+@import "partial/reset";
+@import "partial/font";
+@import "partial/global-class";
+@import "partial/grid-layout";
+@import "partial/blocksets";
+
+header{
+    .tp-line{
+        background: $primary-green;
+        color: $primary-white;
+        font-size: 11px;
+        padding: 20px 0;
+        text-transform: uppercase;
+        ul{
+            display: inline-block;
+            li{
+                display: inline-block;
+                border-right: 1px $primary-white solid;
+                padding-right: 5px;
+                margin-right: 5px;
+                &:last-of-type{
+                    border-right: 0;
+                    margin-right: 0;
+                    padding-right: 0;
+                }
+            }
+        }
+        a{
+            color: $primary-white;
+        }
+        .weather-support-time{
+            ul{
+                li{
+                    
+                }
+            }
+        }
+        aside{
+            @extend .float-right;
+            ul{
+                li{
+                    border: 0;
+                    @extend .no-mp;
+                }
+            }
+        }
+    }
+
+    .tmt-hd{
+        padding: 20px 0;
+        &:after{
+            @extend .after-pseudo;
+        }
+    }
+    .logo {
+        h1 {
+            //padding: 7px 0px;
+            margin: 0;
+            a {
+                line-height: 100px;
+                @extend .dis-block;
+                text-indent: -9999px;
+                font-size: 0px;
+                min-height: 100px;
+                max-width: 280px;
+                margin: 0 auto;
+                background: url(#{$image-path}/logo/logo-tmtmaldives.png) no-repeat center;
+            }
+        }
+    }
+    .container{
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
+
+.weather-support-time{
+    @extend .float-right;
+}
+
+//Heading
+h2{
+    font-size: 16px;
+    font-weight: 900;
+    color: $primary-black;
+    text-transform: uppercase;
+    span{
+        @extend .dis-block;
+        font-size: 12px;
+        font-weight: 300;
+        text-transform: lowercase;
+        color: $light-black;
+    }
+}
+.owl-theme .owl-controls{
+    position: absolute;
+    top: -50px;
+    right: 0;
+}
+.owl-pagination{
+    display: none;
+}
+
+.owl-carousel .item img{
+    display: block;
+    height: auto;
+    width: 100%;
+}
+
+
+//Slider
+#featured-slide{
+    .item-container{
+        position: absolute;
+        bottom: 200px;
+        z-index: 1;
+        width: 100%;
+        color: $primary-white;
+        text-shadow: 0 1px 1px #000;
+        h2{
+            font-size: 48px;
+            color: $primary-white;
+            span{
+                @extend .dis-block;
+                font-size: 24px;
+                color: inherit;
+                text-transform: uppercase;
+            }
+        }
+        a{
+            margin-right: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            text-shadow: none;
+            background-color: $primary-white;
+            color: $global-black;
+            &:hover{
+                color: $global-black;
+                background-color: $primary-gold;
+                }
+            &:last-of-type{
+                margin-right: 0;
+            }
+            &.btn-yell{
+                background-color: $primary-gold;
+                &:hover{
+                    background-color: $primary-white;
+                }
+            }
+        }
+    }
+    .owl-pagination{
+        display: block !important;
+    }
+    .owl-buttons{
+        display: none;
+    }
+}
+
+/* .owl-carousel .owl-item img{
+    width: 100%;
+} */
+
+.slide-from{
+    position: relative;
+}
+
+//Find Holiday
+.find-holiday {
+    position: absolute;
+    bottom: 0;
+    width: 1170px;
+    left: 46%;
+    margin: 0 auto;
+    margin-left: -40%;
+    background-color: #d21034;
+    padding: 20px;
+    color: $primary-white;
+    &:after{
+        @extend .after-pseudo;
+    }
+    form{
+        width: 85%;
+        line-height: 35px;
+        margin-top: 4px;
+        @extend .float-left;
+        input, button, a{
+            @extend .float-left;
+            margin-right: 25px;
+        }
+        .hotels-resorts{
+            width: 45%;
+        }
+        .datepicker{
+            width: 20%;
+        }
+        button{
+            width: 15%;
+        }
+        a{
+            color: $primary-white;
+            font-size: 10px;
+            margin-right: 0;
+            display: inline-block;
+        }
+        button{
+            text-transform: uppercase;
+            font-size: 14px;
+            font-weight: 300;
+            color: $primary-black;
+        }
+    }
+    h4{
+        font-size: 14px;
+        margin: 0 30px 0  0;
+        line-height: 15px;
+        text-transform: uppercase;
+        @extend .float-left;
+        span{
+            font-size: 30px;
+            @extend .dis-block;
+        }
+    }
+
+}
+
+//Featured Holidays
+.section-title{
+    font-size: 30px;
+    letter-spacing: 7px;
+    text-transform: uppercase;
+    span{
+        font-size: 18px;
+        font-weight: 300;
+        letter-spacing: normal;
+        color: $light-black;
+        @extend .dis-block;
+    }
+}
+
+//Special Offers
+.scroll-items{
+    .details{
+        padding: 20px 20px 30px 20px;
+        h4{
+            font-weight: 300;
+            font-size: 14px;
+            margin-bottom: 0px;
+        }
+        .offer-feature{
+            font-size: 12px;
+            color: $light-black;
+        }
+        .pricelist{
+            font-size: 24px;
+            margin: 15px 0;
+            @extend .dis-block;
+            sup,sub{
+                font-size: 14px;
+            }
+        }
+        .more-info{
+            position: absolute;
+            bottom: 0; right: 10px;
+            &:hover{
+                background-color: $primary-gold;
+                color: $global-black;
+                text-decoration: none;
+            }
+        }
+    }
+
+    .owl-carousel .item{
+      margin: 0 10px;
+      background-color: #f4f5f9;
+    }
+    .owl-carousel .item img{
+        width: 100%;
+    }
+}
+
+#featured-slide{
+    .owl-wrapper-outer .owl-wrapper .owl-item .item{
+        text-align: center;
+    }
+}
+
+//Featured Resorts
+.featured-resorts{
+    width: 100%;
+    height: 100%;
+
+    .resorts-title{
+        font-size: 24px;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
+    .digit-dash{
+        font-size: 30px;
+        text-align: center;
+        line-height: 18px;
+        margin-bottom: 15px;
+        @extend .dis-block;
+        .resorts-jist{
+            font-size: 12px;
+            @extend .dis-block;
+        }
+        sup{
+            font-size: 12px;
+        }
+    }
+    .iconlink{
+        a{
+            color: $primary-white;
+            font-size: 30px;
+        }
+    }
+    .colset{
+        [class^="colset-"], [class*=" colset-"]{
+            margin: 0;
+            padding: 0;
+            position: relative;
+            &:hover{
+                .resort-content{
+                    @extend .dis-block;
+                }
+                .resorts-title{
+                    @extend .hide;
+                }
+            }
+            p{
+                margin: 20px 0;
+            }
+        }
+    }
+
+}
+
+.big-title{
+    font-size: 30px;
+    font-weight: 300;
+    text-transform: inherit;
+}
+
+.greetings{
+    p{
+        font-size: 16px;
+        line-height: 30px;
+        color: $light-black;
+    }
+    .bnt-white{
+        padding: 10px 30px;
+        line-height: normal;
+        font-size: 12px;
+        color: $primary-black;
+        text-transform: uppercase;
+        border: 1px $lightgray solid;
+        @extend .roundedborder;
+        &:hover{
+            border-color: $primary-green;
+        }
+    }
+}
+
+//Why Choose
+.whychoose{
+    padding: 30px 0;
+    background-color: $primary-green;
+    color: $primary-white;
+    h2{
+        color: $primary-white;
+        font-size: 36px;
+        font-weight: 300;
+        text-transform: uppercase;
+        letter-spacing: normal;
+        margin-bottom: 20px;
+        span{
+            color: inherit;
+            font-size: 18px;
+            font-weight: 900;
+            text-transform: uppercase;
+            color: #c7e9d7;
+        }
+    }
+    li{
+        margin-bottom: 30px;
+        &:last-of-type{
+            margin-bottom: 0;
+        }
+    }
+    h3{
+        font-size: 18px;
+        font-weight: bold;
+        position: relative;
+        padding-left: 55px;
+        i{
+            font-size: 40px;
+            left: 0;
+            position: absolute;
+        }
+    }
+    p{
+        margin-left: 55px;
+        margin-top: -15px;
+        color: #c7e9d7;
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .circle{
+        border: 1px $primary-white solid;
+    }
+    .inner-padding{
+        padding: 0 45px;
+    }
+    a{
+        color: $primary-white;
+        &:hover{
+           color: #c7e9d7;
+           text-decoration: none; 
+        }
+    }
+}
+
+//Testimonials
+#testimonials{
+    color: $light-black;
+    line-height: 22px;
+    .client-title{
+        color: $primary-gold-a;
+        i.fa-user{
+            background-color: $light-black;
+            @extend .circle, .float-left;
+            font-size: 24px;
+            line-height: 48px;
+            width: 48px;
+            height: 48px;
+            margin-right: 15px;
+            margin-bottom: 15px;
+            text-align: center;
+            color: $primary-white;
+        }
+        i{
+            @extend .dis-block;
+            font-size: 12px;
+            color: $secondary-black
+        }
+    }
+}
+
+//Gallery
+.home-gallery{
+    img{
+        @include border-radius;
+    }
+    .colset{
+        [class^="colset-"], [class*=" colset-"]{
+            padding: 0;
+            margin: 0 5px 0px 0; 
+        }
+    }
+}
+
+
+//Resort-list
+.resort-list{
+    h2{
+        font-size: 24px;
+        color: $primary-gold;
+        span{
+            font-size: 18px;
+        }
+    }
+    .owl-carousel .item img{ width: auto;}
+    .owl-theme .owl-controls{
+        width: 100%;
+        top: 10px;
+        .owl-buttons{
+            .owl-prev{
+                left: 0px;
+            }
+            .owl-next{
+                right: 0px;
+            }
+            .owl-prev, .owl-next{
+                position: absolute;
+            }
+        }
+    }
+}
+
+//Quick links
+
+.quicklinks{
+    border-top: 1px rgba($lightgray, 0.5) solid;
+    padding: 50px 0;
+    color: $lightgray;
+    a{
+        color: #bababa;
+        font-size: 12px;
+        &:hover{
+            color: $primary-green;
+            text-decoration: none;
+        }
+    }
+    ul{
+        -webkit-columns: 3 360px;
+        -moz-columns: 3 360px;
+        columns: 3 360px;
+        -webkit-column-gap: 45p;
+        -moz-column-gap: 45px;
+        column-gap: 45px;
+        li{
+            line-height: 30px;
+        }
+    }
+    .quick{
+        border: 1px $lightgray solid;
+        @extend .roundedborder;
+        padding: 7px 10px;
+        text-align: center;
+        i{font-size: 16px;}
+    }
+}
+
+//Footer
+footer{
+    background-color: #2a2a2a;
+    color: #6f6f6f;
+    font-size: 12px;
+    padding-top: 60px;
+    //@extend .after-pseudo;
+    a{
+        color: $lightgray;
+    }
+    .container{
+        margin: 0 auto;
+    }  
+    .visit-maldives{
+        @extend .after-pseudo;
+        margin: 30px 0;
+        a{
+            margin-right: 20px;
+            &:last-of-type{
+                margin-right: 0;
+            }
+            img{
+                -webkit-filter: grayscale(100%);
+                filter: grayscale(100%);
+                opacity: 0.5;
+            }
+        }
+    }
+    .socials-network{
+        li{
+            display: inline-block;
+            margin-right: 15px;
+            text-align: center;
+            &:last-of-type{
+                margin-right: 0;
+            }
+            .fa{
+                font-size: 24px;
+            }
+            a{
+                color: #6f6f6f;
+                &:hover{
+                    color: $lightgray;
+                }
+            }
+        }
+    }
+    .affiliated-social{
+        img{
+            -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
+            height: 40px;
+            padding: 5px 10px;
+            background-color: #6a6a6a;
+            @extend .roundedborder;
+        }
+    }
+    .contacts{
+        @extend .float-right;
+        h5{
+            font-size: 10px;
+            margin: 0 0 5px 0;
+            font-weight: normal;
+        }
+        li{
+            position: relative;
+            padding-left: 48px;
+            em{
+                font-size: 10px;
+                font-style: normal;
+                font-weight: normal;
+            }
+            i{
+                font-size: 36px;
+                position: absolute;
+                margin-right: 15px;
+                left: 0;
+                &.fa-mobile{
+                    font-size: 48px;
+                }
+            }
+            .info-links{
+                font-size: 14px;
+                text-transform: uppercase;
+            }
+        }
+    }
+    .poweredby{
+        background-color: #191919;
+        color: #3d3d3d;
+        padding: 15px 0;
+        font-size: 11px;
+        &:after{
+            @extend .after-pseudo;
+        }
+        ul{
+            width: auto;
+            li{
+                display: inline-block;
+                margin-right: 15px;
+                &:last-of-type{
+                    margin-right: 0;
+                }
+            }
+        }
+        a{
+            color: inherit;
+        }
+    }
+}
+
+//@import "partial/component";
+@import "partial/form";
+@import "partial/media";

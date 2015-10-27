@@ -1,0 +1,5 @@
+<section class="greetings align-center container">
+    <h2 class="big-title">Your Journey in Luxury and Beyond</h2>
+    <p>All over the world there are lots of holiday places, but Maldives travel is very unique for Vacations and Honeymoon. Maldives was unknown tourists place in 1970s, but today Maldives has become the famous honeymoon island. If you are searching for best place to travel in Maldives, you are at right destination. Check all the Maldives Travel places, resorts here. You can also look at different vacation packages of diving, wedding, honeymoon for your Maldives travel offered at Maldives Exclusive. Contact Maldives exclusive agent to travel best places. Our agents will suggest you best Maldives resorts which will suit you needs and budget.</p>
+    <p><a href="" class="a-btn bnt-white">read more</a></p>
+</section>

@@ -1,0 +1,63 @@
+//yesubc.com (c) Sunil Shrestha <yesubc@gmail.com>
+
+@media (min-width: 320px) {
+    .float-left,.float-right{
+        float: none;
+    }
+    .navigation{
+        ul{
+            width: $width-default;
+            line-height: 40px;
+            padding: 20px;
+            text-align: center;
+            li{
+                display: block;
+                margin-right: 0;
+                line-height: inherit;
+                border-bottom: 1px #ccc solid;
+            }
+        }
+    }
+    .find-holiday{
+        display: none;
+    }
+}
+
+@media (min-width: 480px) {
+}
+
+@media (min-width: 640px) {
+}
+
+@media (max-width: 767px) {
+}
+
+@media (min-width: 768px) {
+    .float-left{ float: left;}
+    .float-right{ float: right;}
+    .find-holiday{
+        display: block;
+    }
+
+    .greetings{
+        padding: 0 130px;
+    }
+    
+}
+
+@media (min-width: 992px) {
+    header{
+        div.logo{
+            width: 280px;
+            float: left;
+        }
+        .weather-support-time{
+            float: right;
+        }
+    }
+
+}
+
+@media (min-width: 1200px) {
+
+}

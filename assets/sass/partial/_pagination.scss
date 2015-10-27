@@ -1,0 +1,47 @@
+//yesubc.com (c) Sunil Shrestha <yesubc@gmail.com>
+ul.pagination {
+    @extend .dis-block;
+    padding: 15px 0;
+
+    li {
+        font-size: 12px;
+        display: inline-block;
+        margin-right: 2px;
+        color: $secondary-black;
+
+        a, button {
+            @extend .dis-block, .roundedborder;
+            padding: 5px 10px;;
+            color: $secondary-black;
+            background: none;
+            line-height: inherit;
+            @include x-transition(background-color 300ms ease-out);
+            border: 1px rgba($lightgray, 0.7) solid;
+            &:hover, &:focus {
+                background: #e6e6e6;
+                text-decoration: none;
+            }
+        }
+        &.current a, &.current button {
+            background: #008cba;
+            border-color: #008cba;
+            color: $global-white;
+            font-weight: bold;
+            cursor: default;
+            &:hover {
+                background: #008cba;
+                cursor: default;
+                text-decoration: none;
+            }
+        }
+        &.unavailable {
+            a, button {
+                cursor: default;
+                color: rgba($secondary-black, 0.5);
+                &:hover, &:focus {
+                    background-color: transparent;
+                }
+            }
+        }
+    }
+}

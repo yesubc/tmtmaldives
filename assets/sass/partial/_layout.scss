@@ -73,7 +73,6 @@
         width: $main-width;
         @extend .float-right;
         .col-main {
-
             width: $width-default;
         }
     }
@@ -83,11 +82,11 @@
 .col2-right-layout {
     width: $width-default;
     @extend .padding;
+    background: #fff;
     .main {
         width: $main-width;
         @extend .float-left;
         .col-main {
-
             width: $width-default;
         }
     }

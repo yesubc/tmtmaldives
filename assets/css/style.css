@@ -12,7 +12,8 @@ website: http://www.yesubc.com/
 html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
 small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend, table, caption, tbody, tfoot, article, aside, canvas, details, figcaption, figure, footer, header, hgroup,
+fieldset, form, label, legend, table, caption, tbody, tfoot,
+article, aside, canvas, details, figcaption, figure, footer, header, hgroup,
 menu, nav, section, summary, time, mark, audio, video, input, select, textarea, button, main {
   margin: 0;
   padding: 0;
@@ -216,7 +217,7 @@ button {
 .clr {
   zoom: 1; }
 
-.clearall, .after-pseudo, header .tmt-hd:after, .find-holiday:after, footer .visit-maldives, footer .poweredby:after, .msform:after, .loader, .colset:after, .msform fieldset:after {
+.clearall, .after-pseudo, header .tmt-hd:after, .find-holiday:after, footer, footer .visit-maldives, footer .poweredby:after, .msform:after, .loader, .colset:after, .msform fieldset:after {
   clear: both; }
 
 @media print {
@@ -289,6 +290,101 @@ button {
   src: url("../fonts/entypo-selected.eot?#iefix") format("embedded-opentype"), url("../fonts/entypo-selected.woff") format("woff"), url("../fonts/entypo-selected.ttf") format("truetype"), url("../fonts/entypo-selected.svg#entypo-selected") format("svg");
   font-weight: normal;
   font-style: normal; }
+
+@font-face {
+  font-family: 'tmtmaldives';
+  src: url("../fonts/tmtmaldives.eot?7onoel");
+  src: url("../fonts/tmtmaldives.eot?7onoel#iefix") format("embedded-opentype"), url("../fonts/tmtmaldives.ttf?7onoel") format("truetype"), url("../fonts/tmtmaldives.woff?7onoel") format("woff"), url("../fonts/tmtmaldives.svg?7onoel#tmtmaldives") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'tmtmaldives' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-arrow-next:before {
+  content: "\e903"; }
+
+.icon-bed:before {
+  content: "\e904"; }
+
+.icon-calendar-icons:before {
+  content: "\e905"; }
+
+.icon-clock:before {
+  content: "\e906"; }
+
+.icon-customerservice:before {
+  content: "\e907"; }
+
+.icon-down-arrow:before {
+  content: "\e908"; }
+
+.icon-envelope:before {
+  content: "\e909"; }
+
+.icon-facebook:before {
+  content: "\e90a"; }
+
+.icon-heart:before {
+  content: "\e90b"; }
+
+.icon-leftarrow:before {
+  content: "\e90c"; }
+
+.icon-maleuser:before {
+  content: "\e90d"; }
+
+.icon-mappointer:before {
+  content: "\e90e"; }
+
+.icon-navigate:before {
+  content: "\e90f"; }
+
+.icon-phone:before {
+  content: "\e910"; }
+
+.icon-pin:before {
+  content: "\e911"; }
+
+.icon-socialnetwork:before {
+  content: "\e912"; }
+
+.icon-speechbubble:before {
+  content: "\e913"; }
+
+.icon-star:before {
+  content: "\e914"; }
+
+.icon-sticker:before {
+  content: "\e915"; }
+
+.icon-thermometer:before {
+  content: "\e916"; }
+
+.icon-twitter:before {
+  content: "\e917"; }
+
+.icon-youtube:before {
+  content: "\e918"; }
+
+.icon-bullhorn:before {
+  content: "\e900"; }
+
+.icon-cart:before {
+  content: "\e901"; }
+
+.icon-credit-card:before {
+  content: "\e902"; }
 
 html, body {
   height: 100%;
@@ -363,12 +459,12 @@ h6 {
 ol, ul {
   margin: 0; }
 
-.after-pseudo, header .tmt-hd:after, .find-holiday:after, footer .visit-maldives, footer .poweredby:after, .msform:after, .loader, .colset:after, .msform fieldset:after {
+.after-pseudo, header .tmt-hd:after, .find-holiday:after, footer, footer .visit-maldives, footer .poweredby:after, .msform:after, .loader, .colset:after, .msform fieldset:after {
   content: "";
   width: 100%;
   display: table; }
 
-.dis-block, header .logo h1 a, h2 span, #featured-slide .item-container h2 span, .find-holiday h4 span, .section-title span, .scroll-items .details .pricelist, .featured-resorts .digit-dash, .featured-resorts .digit-dash .resorts-jist, .featured-resorts .colset [class^="colset-"]:hover .resort-content, .featured-resorts .colset [class*=" colset-"]:hover .resort-content, #testimonials .client-title i, button, input[type='submit'], input[type='button'], a.button, .button, .msform fieldset, .show-m {
+.dis-block, header .logo h1 a, .weather-support-time ul li .block-weather .digit, h2 span, #featured-slide .item-container h2 span, .find-holiday h4 span, .section-title span, .scroll-items .details .pricelist, .featured-resorts .digit-dash, .featured-resorts .digit-dash .resorts-jist, .featured-resorts .colset [class^="colset-"]:hover .resort-content, .featured-resorts .colset [class*=" colset-"]:hover .resort-content, #testimonials .client-title i, button, input[type='submit'], input[type='button'], a.button, .button, .msform fieldset, .show-m {
   display: block; }
 
 .hide-m, .hide, ul.dropdown-menu, [hidden], .featured-resorts .colset [class^="colset-"]:hover .resorts-title, .featured-resorts .colset [class*=" colset-"]:hover .resorts-title {
@@ -379,10 +475,10 @@ ol, ul {
   -webkit-border-radius: 4px;
   border-radius: 4px; }
 
-.float-left, .col2-left-layout .col-left, .col2-right-layout .main, .col3-left-layout .col-left, .col3-left-layout .main .col-main, .col3-right-layout .main, .col3-right-layout .main .col-l-left, .col3-l-left-layout .col-left, .col3-l-left-layout .main .col-l-left, .col3-r-right-layout .main, .col3-r-right-layout .main .col-main, .colset-2 .col-1, .rating-car-block.colset-2 .col-1, .colset-3 .col-1, .colset-3 .col-2, .colset-4 .col-1, .colset-4 .col-2, .colset-4 .col-3, .colset [class^="colset-"], .colset [class*=" colset-"], .find-holiday form, .find-holiday form input, .find-holiday form button, .find-holiday form a, .find-holiday h4, #testimonials .client-title i.fa-user {
+.float-left, .col2-left-layout .col-left, .col2-right-layout .main, .col3-left-layout .col-left, .col3-left-layout .main .col-main, .col3-right-layout .main, .col3-right-layout .main .col-l-left, .col3-l-left-layout .col-left, .col3-l-left-layout .main .col-l-left, .col3-r-right-layout .main, .col3-r-right-layout .main .col-main, .colset-2 .col-1, .rating-car-block.colset-2 .col-1, .colset-3 .col-1, .colset-3 .col-2, .colset-4 .col-1, .colset-4 .col-2, .colset-4 .col-3, .colset [class^="colset-"], .colset [class*=" colset-"], header .tp-line ul li, .weather-support-time ul li, .weather-support-time ul li .block-weather, .find-holiday form, .find-holiday form input, .find-holiday form button, .find-holiday form a, .find-holiday h4, #testimonials .client-title i.fa-user {
   float: left; }
 
-.float-right, .col2-left-layout .main, .col2-right-layout .col-right, .col3-left-layout .main, .col3-left-layout .main .col-r-right, .col3-right-layout .col-right, .col3-right-layout .main .col-main, .col3-l-left-layout .main, .col3-l-left-layout .main .col-main, .col3-r-right-layout .col-right, .col3-r-right-layout .main .col-r-right, .colset-2 .col-2, .rating-car-block.colset-2 .col-2, .colset-3 .col-3, .colset-4 .col-4, header .tp-line aside, .weather-support-time, footer .contacts {
+.float-right, .col2-left-layout .main, .col2-right-layout .col-right, .col3-left-layout .main, .col3-left-layout .main .col-r-right, .col3-right-layout .col-right, .col3-right-layout .main .col-main, .col3-l-left-layout .main, .col3-l-left-layout .main .col-main, .col3-r-right-layout .col-right, .col3-r-right-layout .main .col-r-right, .colset-2 .col-2, .rating-car-block.colset-2 .col-2, .colset-3 .col-3, .colset-4 .col-4, header .tp-line aside, .weather-support-time, .weather-support-time ul li i, footer .contacts {
   float: right; }
 
 .scroll, .msform {
@@ -474,8 +570,7 @@ ol, ul {
   margin: 0 0 30px 0;
   position: relative;
   font-size: 24px; }
-  .or-option:after,
-  .or-option:before {
+  .or-option:after, .or-option:before {
     background-color: #cccccc;
     background-color: rgba(204, 204, 204, 0.5);
     content: "";
@@ -774,7 +869,6 @@ header .tp-line {
   header .tp-line ul {
     display: inline-block; }
     header .tp-line ul li {
-      display: inline-block;
       border-right: 1px #ffffff solid;
       padding-right: 5px;
       margin-right: 5px; }
@@ -785,7 +879,11 @@ header .tp-line {
   header .tp-line a {
     color: #ffffff; }
   header .tp-line aside ul li {
-    border: 0; }
+    border: 0;
+    position: relative;
+    margin-left: 15px; }
+    header .tp-line aside ul li .speak-expert {
+      color: #ffc641; }
 
 header .tmt-hd {
   padding: 20px 0; }
@@ -804,6 +902,25 @@ header .logo h1 {
 header .container {
   margin-top: 0;
   margin-bottom: 0; }
+
+.weather-support-time {
+  margin-top: 30px; }
+  .weather-support-time ul li {
+    font-size: 10px;
+    margin-right: 100px;
+    text-transform: uppercase; }
+    .weather-support-time ul li:last-child {
+      margin-right: 0; }
+    .weather-support-time ul li i {
+      color: #a9a9a9;
+      font-size: 30px;
+      margin-left: 20px; }
+    .weather-support-time ul li .block-weather .digit {
+      color: #00a0af;
+      font-size: 16px;
+      font-weight: bold;
+      margin-top: 5px;
+      text-transform: none; }
 
 h2 {
   font-size: 16px;
@@ -906,7 +1023,7 @@ h2 {
       color: #666666; }
   .find-holiday h4 {
     font-size: 14px;
-    margin: 0 30px 0 0;
+    margin: 0 30px 0  0;
     line-height: 15px;
     text-transform: uppercase; }
     .find-holiday h4 span {
@@ -1192,6 +1309,10 @@ footer {
           margin-right: 0; }
     footer .poweredby a {
       color: inherit; }
+
+.page {
+  margin: 0 auto;
+  padding: 0px; }
 
 ::-moz-placeholder {
   color: #999999;
@@ -1601,8 +1722,29 @@ fieldset[disabled] input[type="checkbox"] {
   .input-label input {
     padding-left: 40px; }
 
+.breadcrumb {
+  padding: 10px 0;
+  font-size: 12px;
+  border-bottom: 1px solid #fbfbfb; }
+  .breadcrumb a {
+    color: #0088cc;
+    text-decoration: none; }
+    .breadcrumb a:hover {
+      color: #005580;
+      text-decoration: underline; }
+  .breadcrumb .container {
+    margin: 0 auto; }
+  .breadcrumb li {
+    display: inline-block;
+    text-shadow: 0 1px 0 #ffffff; }
+  .breadcrumb .divider {
+    padding: 0 5px;
+    color: #999999; }
+  .breadcrumb .active a {
+    color: #333333; }
+
 @media (min-width: 320px) {
-  .float-left, .col2-left-layout .col-left, .col2-right-layout .main, .col3-left-layout .col-left, .col3-left-layout .main .col-main, .col3-right-layout .main, .col3-right-layout .main .col-l-left, .col3-l-left-layout .col-left, .col3-l-left-layout .main .col-l-left, .col3-r-right-layout .main, .col3-r-right-layout .main .col-main, .colset-2 .col-1, .rating-car-block.colset-2 .col-1, .colset-3 .col-1, .colset-3 .col-2, .colset-4 .col-1, .colset-4 .col-2, .colset-4 .col-3, .colset [class^="colset-"], .colset [class*=" colset-"], .find-holiday form, .find-holiday form input, .find-holiday form button, .find-holiday form a, .find-holiday h4, #testimonials .client-title i.fa-user, .float-right, .col2-left-layout .main, .col2-right-layout .col-right, .col3-left-layout .main, .col3-left-layout .main .col-r-right, .col3-right-layout .col-right, .col3-right-layout .main .col-main, .col3-l-left-layout .main, .col3-l-left-layout .main .col-main, .col3-r-right-layout .col-right, .col3-r-right-layout .main .col-r-right, .colset-2 .col-2, .rating-car-block.colset-2 .col-2, .colset-3 .col-3, .colset-4 .col-4, header .tp-line aside, .weather-support-time, footer .contacts {
+  .float-left, .col2-left-layout .col-left, .col2-right-layout .main, .col3-left-layout .col-left, .col3-left-layout .main .col-main, .col3-right-layout .main, .col3-right-layout .main .col-l-left, .col3-l-left-layout .col-left, .col3-l-left-layout .main .col-l-left, .col3-r-right-layout .main, .col3-r-right-layout .main .col-main, .colset-2 .col-1, .rating-car-block.colset-2 .col-1, .colset-3 .col-1, .colset-3 .col-2, .colset-4 .col-1, .colset-4 .col-2, .colset-4 .col-3, .colset [class^="colset-"], .colset [class*=" colset-"], header .tp-line ul li, .weather-support-time ul li, .weather-support-time ul li .block-weather, .find-holiday form, .find-holiday form input, .find-holiday form button, .find-holiday form a, .find-holiday h4, #testimonials .client-title i.fa-user, .float-right, .col2-left-layout .main, .col2-right-layout .col-right, .col3-left-layout .main, .col3-left-layout .main .col-r-right, .col3-right-layout .col-right, .col3-right-layout .main .col-main, .col3-l-left-layout .main, .col3-l-left-layout .main .col-main, .col3-r-right-layout .col-right, .col3-r-right-layout .main .col-r-right, .colset-2 .col-2, .rating-car-block.colset-2 .col-2, .colset-3 .col-3, .colset-4 .col-4, header .tp-line aside, .weather-support-time, .weather-support-time ul li i, footer .contacts {
     float: none; }
   .navigation ul {
     width: 100%;
@@ -1618,9 +1760,9 @@ fieldset[disabled] input[type="checkbox"] {
     display: none; } }
 
 @media (min-width: 768px) {
-  .float-left, .col2-left-layout .col-left, .col2-right-layout .main, .col3-left-layout .col-left, .col3-left-layout .main .col-main, .col3-right-layout .main, .col3-right-layout .main .col-l-left, .col3-l-left-layout .col-left, .col3-l-left-layout .main .col-l-left, .col3-r-right-layout .main, .col3-r-right-layout .main .col-main, .colset-2 .col-1, .rating-car-block.colset-2 .col-1, .colset-3 .col-1, .colset-3 .col-2, .colset-4 .col-1, .colset-4 .col-2, .colset-4 .col-3, .colset [class^="colset-"], .colset [class*=" colset-"], .find-holiday form, .find-holiday form input, .find-holiday form button, .find-holiday form a, .find-holiday h4, #testimonials .client-title i.fa-user {
+  .float-left, .col2-left-layout .col-left, .col2-right-layout .main, .col3-left-layout .col-left, .col3-left-layout .main .col-main, .col3-right-layout .main, .col3-right-layout .main .col-l-left, .col3-l-left-layout .col-left, .col3-l-left-layout .main .col-l-left, .col3-r-right-layout .main, .col3-r-right-layout .main .col-main, .colset-2 .col-1, .rating-car-block.colset-2 .col-1, .colset-3 .col-1, .colset-3 .col-2, .colset-4 .col-1, .colset-4 .col-2, .colset-4 .col-3, .colset [class^="colset-"], .colset [class*=" colset-"], header .tp-line ul li, .weather-support-time ul li, .weather-support-time ul li .block-weather, .find-holiday form, .find-holiday form input, .find-holiday form button, .find-holiday form a, .find-holiday h4, #testimonials .client-title i.fa-user {
     float: left; }
-  .float-right, .col2-left-layout .main, .col2-right-layout .col-right, .col3-left-layout .main, .col3-left-layout .main .col-r-right, .col3-right-layout .col-right, .col3-right-layout .main .col-main, .col3-l-left-layout .main, .col3-l-left-layout .main .col-main, .col3-r-right-layout .col-right, .col3-r-right-layout .main .col-r-right, .colset-2 .col-2, .rating-car-block.colset-2 .col-2, .colset-3 .col-3, .colset-4 .col-4, header .tp-line aside, .weather-support-time, footer .contacts {
+  .float-right, .col2-left-layout .main, .col2-right-layout .col-right, .col3-left-layout .main, .col3-left-layout .main .col-r-right, .col3-right-layout .col-right, .col3-right-layout .main .col-main, .col3-l-left-layout .main, .col3-l-left-layout .main .col-main, .col3-r-right-layout .col-right, .col3-r-right-layout .main .col-r-right, .colset-2 .col-2, .rating-car-block.colset-2 .col-2, .colset-3 .col-3, .colset-4 .col-4, header .tp-line aside, .weather-support-time, .weather-support-time ul li i, footer .contacts {
     float: right; }
   .find-holiday {
     display: block; }

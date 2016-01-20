@@ -17,7 +17,7 @@ header{
         ul{
             display: inline-block;
             li{
-                display: inline-block;
+                @extend .float-left;
                 border-right: 1px $primary-white solid;
                 padding-right: 5px;
                 margin-right: 5px;
@@ -31,19 +31,17 @@ header{
         a{
             color: $primary-white;
         }
-        .weather-support-time{
-            ul{
-                li{
-                    
-                }
-            }
-        }
         aside{
             @extend .float-right;
             ul{
                 li{
                     border: 0;
+                    position: relative;
+                    margin-left: 15px;
                     @extend .no-mp;
+                    .speak-expert{
+                        color: $primary-gold;
+                    }
                 }
             }
         }
@@ -78,7 +76,38 @@ header{
 }
 
 .weather-support-time{
+    margin-top: 30px;
     @extend .float-right;
+    ul{
+        li{
+            @extend .float-left;
+            font-size: 10px;
+            //width: 175px;
+            margin-right: 100px;
+            text-transform: uppercase;
+
+            &:last-child{
+                margin-right: 0;
+            }
+            i{
+                color: #a9a9a9;
+                font-size: 30px;
+                margin-left: 20px;
+                @extend .float-right;
+            }
+            .block-weather{
+                @extend .float-left;
+                .digit{
+                    @extend .dis-block;
+                    color: #00a0af;
+                    font-size: 16px;
+                    font-weight: bold;
+                    margin-top: 5px;
+                    text-transform: none;
+                }
+            }
+        }
+    }
 }
 
 //Heading
@@ -531,7 +560,7 @@ footer{
     color: #6f6f6f;
     font-size: 12px;
     padding-top: 60px;
-    //@extend .after-pseudo;
+    @extend .after-pseudo;
     a{
         color: $lightgray;
     }
@@ -636,6 +665,12 @@ footer{
     }
 }
 
+.page{
+    margin: 0 auto;
+    padding: 0px;
+}
+
 //@import "partial/component";
 @import "partial/form";
+@import "partial/breadcrumbs";
 @import "partial/media";

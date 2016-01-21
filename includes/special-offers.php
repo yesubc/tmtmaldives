@@ -1,5 +1,5 @@
 <section class="special-offers scroll-items container">
-    <h2>
+    <h2 class="block-name">
         Special Offers
         <span>Summer Savings Up to 35% savings and a $40 coupon!</span>
     </h2>

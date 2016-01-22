@@ -19,6 +19,12 @@
 }
 
 .col2-right-layout {
+    .container{
+        margin: 30px auto;
+        &:after{
+            @extend .after-pseudo;
+        }
+    }
     .main {
         @extend .float-left;
     }
@@ -100,13 +106,41 @@
 
 @media (min-width: 320px) {
     .container {
-        width: 320px;
+        width: $width-default;
+    }
+    .col2-right-layout{
+        .main{
+            width: $width-default;
+        }
+        .col-right{
+            width: $width-default;
+        }
+    }
+}
+
+@media (min-width: 640px) {
+    .col2-right-layout{
+        .main{
+            width: $width-default;
+        }
+        .col-right{
+            width: $width-default;
+        }
     }
 }
 
 @media (min-width: 768px) {
     .container {
         width: 750px;
+    }
+    .col2-right-layout{
+        .main{
+            width: $main-width;
+        }
+        .col-right{
+            padding-left: 30px;
+            width: $right-width;
+        }
     }
 }
 

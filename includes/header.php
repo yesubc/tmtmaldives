@@ -1,7 +1,7 @@
 <div class="tp-line">
     <div class="container">
         <ul>
-            <li><a href="">Home</a></li>
+            <li><a href="index.php">Home</a></li>
             <li><a href="">About Us</a></li>
             <li><a href="">Currency Converter</a></li>
             <li><a href="">Lights to Maldives</a></li>
@@ -19,7 +19,7 @@
 </div>
 <div class="tmt-hd container">
     <div class="logo">
-        <h1><a href="#">Logo</a></h1>
+        <h1><a href="index.php">Logo</a></h1>
     </div>
     <div class="weather-support-time">
         <ul>

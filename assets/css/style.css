@@ -217,7 +217,7 @@ button {
 .clr {
   zoom: 1; }
 
-.clearall, .after-pseudo, header .tmt-hd:after, .find-holiday:after, footer, footer .visit-maldives, footer .poweredby:after, .msform:after, .loader, .colset:after, .msform fieldset:after {
+.clearall, .after-pseudo, .col2-right-layout .container:after, header .tmt-hd:after, .find-holiday:after, footer, footer .visit-maldives, footer .poweredby:after, .msform:after, .loader, .colset:after, .msform fieldset:after {
   clear: both; }
 
 @media print {
@@ -430,22 +430,19 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 20px;
   letter-spacing: 0.5px; }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: "montserratlight", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-  margin-bottom: 20px; }
-
 h1 {
-  font-size: 45px; }
+  font-size: 38px; }
 
 h2 {
-  font-size: 25px;
+  font-size: 32px;
   margin: 0;
   padding-bottom: 20px; }
 
 h3 {
-  font-size: 18px; }
+  font-size: 26px; }
 
 h4 {
+  font-size: 20px;
   font-size: 14px; }
 
 h5 {
@@ -459,12 +456,12 @@ h6 {
 ol, ul {
   margin: 0; }
 
-.after-pseudo, header .tmt-hd:after, .find-holiday:after, footer, footer .visit-maldives, footer .poweredby:after, .msform:after, .loader, .colset:after, .msform fieldset:after {
+.after-pseudo, .col2-right-layout .container:after, header .tmt-hd:after, .find-holiday:after, footer, footer .visit-maldives, footer .poweredby:after, .msform:after, .loader, .colset:after, .msform fieldset:after {
   content: "";
   width: 100%;
   display: table; }
 
-.dis-block, header .logo h1 a, .weather-support-time ul li .block-weather .digit, h2 span, #featured-slide .item-container h2 span, .find-holiday h4 span, .section-title span, .scroll-items .details .pricelist, .featured-resorts .digit-dash, .featured-resorts .digit-dash .resorts-jist, .featured-resorts .colset [class^="colset-"]:hover .resort-content, .featured-resorts .colset [class*=" colset-"]:hover .resort-content, #testimonials .client-title i, button, input[type='submit'], input[type='button'], a.button, .button, .msform fieldset, .show-m {
+.dis-block, header .logo h1 a, .weather-support-time ul li .block-weather .digit, h2.block-name span, #featured-slide .item-container h2 span, .find-holiday h4 span, .section-title span, .scroll-items .details .pricelist, .featured-resorts .digit-dash, .featured-resorts .digit-dash .resorts-jist, .featured-resorts .colset [class^="colset-"]:hover .resort-content, .featured-resorts .colset [class*=" colset-"]:hover .resort-content, #testimonials .client-title i, button, input[type='submit'], input[type='button'], a.button, .button, .msform fieldset, .show-m {
   display: block; }
 
 .hide-m, .hide, ul.dropdown-menu, [hidden], .featured-resorts .colset [class^="colset-"]:hover .resorts-title, .featured-resorts .colset [class*=" colset-"]:hover .resorts-title {
@@ -561,7 +558,6 @@ ol, ul {
   min-height: 100%;
   cursor: pointer; }
 
-/*Option Header*/
 .or-option {
   text-transform: uppercase;
   text-align: center;
@@ -583,12 +579,70 @@ ol, ul {
   .or-option:before {
     left: 0; }
 
+.panel {
+  margin-bottom: 20px;
+  background-color: #FFF;
+  border: 1px solid #DDD;
+  border-radius: 4px; }
+  .panel .panel-heading {
+    padding: 10px 15px;
+    border-bottom: 1px solid #DDD;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    background-color: #F5F5F5; }
+    .panel .panel-heading .panel-title {
+      margin-top: 0px;
+      margin-bottom: 0px;
+      font-size: 16px;
+      color: inherit; }
+  .panel.panel-primary {
+    border-color: #00a0af; }
+    .panel.panel-primary .panel-heading {
+      color: #FFF;
+      background-color: #00a0af;
+      border-color: #00a0af; }
+  .panel .panel-body {
+    padding: 15px; }
+
+.list-group li {
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+  margin-bottom: -1px;
+  background-color: #FFF;
+  border: 1px solid #DDD; }
+  .list-group li:first-child {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px; }
+  .list-group li:last-child {
+    margin-bottom: 0px;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px; }
+
+.side-module {
+  border: 1px solid #DDD;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  padding: 15px; }
+  .side-module li {
+    padding: 5px 0;
+    border: 0; }
+    .side-module li a {
+      color: #555; }
+    .side-module li .fa {
+      font-size: 16px;
+      margin-right: 10px; }
+
 .col1-layout {
   width: 100%; }
   .col1-layout .main {
     width: 100%; }
     .col1-layout .main .col-main {
       width: 100%; }
+
+.col2-right-layout .container {
+  margin: 30px auto; }
 
 .col3-left-layout .main {
   padding: 0; }
@@ -607,11 +661,26 @@ ol, ul {
 
 @media (min-width: 320px) {
   .container {
-    width: 320px; } }
+    width: 100%; }
+  .col2-right-layout .main {
+    width: 100%; }
+  .col2-right-layout .col-right {
+    width: 100%; } }
+
+@media (min-width: 640px) {
+  .col2-right-layout .main {
+    width: 100%; }
+  .col2-right-layout .col-right {
+    width: 100%; } }
 
 @media (min-width: 768px) {
   .container {
-    width: 750px; } }
+    width: 750px; }
+  .col2-right-layout .main {
+    width: 70%; }
+  .col2-right-layout .col-right {
+    padding-left: 30px;
+    width: 30%; } }
 
 @media (min-width: 992px) {
   .container {
@@ -922,12 +991,12 @@ header .container {
       margin-top: 5px;
       text-transform: none; }
 
-h2 {
+h2.block-name {
   font-size: 16px;
   font-weight: 900;
   color: #666666;
   text-transform: uppercase; }
-  h2 span {
+  h2.block-name span {
     font-size: 12px;
     font-weight: 300;
     text-transform: lowercase;
@@ -1313,6 +1382,18 @@ footer {
 .page {
   margin: 0 auto;
   padding: 0px; }
+  .page h1, .page h2, .page h3, .page h4, .page h5, .page h6 {
+    font-family: "Raleway"; }
+  .page .entry-page {
+    line-height: 24px; }
+    .page .entry-page p {
+      line-height: 24px;
+      font-family: montserratlight; }
+  .page .widgets {
+    margin-bottom: 20px; }
+  .page .widgets-title {
+    font-size: 14px;
+    text-transform: uppercase; }
 
 ::-moz-placeholder {
   color: #999999;
@@ -1758,6 +1839,14 @@ fieldset[disabled] input[type="checkbox"] {
       border-bottom: 1px #ccc solid; }
   .find-holiday {
     display: none; } }
+
+@media (min-width: 320px) {
+  .weather-support-time {
+    display: none; } }
+
+@media (min-width: 767px) {
+  .weather-support-time {
+    display: block; } }
 
 @media (min-width: 768px) {
   .float-left, .col2-left-layout .col-left, .col2-right-layout .main, .col3-left-layout .col-left, .col3-left-layout .main .col-main, .col3-right-layout .main, .col3-right-layout .main .col-l-left, .col3-l-left-layout .col-left, .col3-l-left-layout .main .col-l-left, .col3-r-right-layout .main, .col3-r-right-layout .main .col-main, .colset-2 .col-1, .rating-car-block.colset-2 .col-1, .colset-3 .col-1, .colset-3 .col-2, .colset-4 .col-1, .colset-4 .col-2, .colset-4 .col-3, .colset [class^="colset-"], .colset [class*=" colset-"], header .tp-line ul li, .weather-support-time ul li, .weather-support-time ul li .block-weather, .find-holiday form, .find-holiday form input, .find-holiday form button, .find-holiday form a, .find-holiday h4, #testimonials .client-title i.fa-user {

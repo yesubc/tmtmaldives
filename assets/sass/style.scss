@@ -111,7 +111,7 @@ header{
 }
 
 //Heading
-h2{
+h2.block-name{
     font-size: 16px;
     font-weight: 900;
     color: $primary-black;
@@ -668,6 +668,23 @@ footer{
 .page{
     margin: 0 auto;
     padding: 0px;
+    h1, h2, h3, h4, h5, h6{
+        font-family: "Raleway";
+    }
+    .entry-page{
+        line-height: 24px;
+        p{
+            line-height: 24px;
+            font-family: montserratlight;
+        }
+    }
+    .widgets{
+        margin-bottom: 20px;
+    }
+    .widgets-title{
+        font-size: 14px;
+        text-transform: uppercase;
+    }
 }
 
 //@import "partial/component";

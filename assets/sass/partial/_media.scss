@@ -23,13 +23,19 @@
     }
 }
 
-@media (min-width: 480px) {
+@media (min-width: 320px) {
+    .weather-support-time{
+        display: none;
+    }
 }
 
 @media (min-width: 640px) {
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
+    .weather-support-time{
+        display: block;
+    }
 }
 
 @media (min-width: 768px) {
